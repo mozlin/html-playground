@@ -12,15 +12,55 @@ body {
   color: #c27ad8;
 }
 
+.body-text {
+  color: black;
+}
+
 .grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 200px 200px;
+  grid-gap: 5em;
 }
  
-.grid__item {
-  width: 100%;
-  height: 200px;
-  background: skyblue;
+.grid__item_1 {
+  width: 250px;
+  height: 250px;
+  margin: auto;
+  border: 1px solid pink;
+  border-radius: 25px;
+  background: url(https://laistassets.scprdev.org/i/a3df30fb7f415566d71ddf8e2aa9eef7/5cd48b964566910009be0289-eight.jpg);
+  background-position: left;
+}
+
+.grid__item_2 {
+  width: 250px;
+  height: 250px;
+  margin: auto;
+  border: 1px solid pink;
+  border-radius: 25px;
+  background: url(https://s.abcnews.com/images/Lifestyle/HT_best_friends_kittens_1_jt_150526_16x9_992.jpg);
+  background-position: left;
+}
+
+.grid__item_3 {
+  width: 250px;
+  height: 250px;
+  margin: auto;
+  border: 1px solid pink;
+  border-radius: 25px;
+  background: url(https://cdn3-www.cattime.com/assets/uploads/gallery/siamese-cats-and-kittens-pictures/siamese-cat-kitten-picture-1.jpg);
+  background-position: center;
+}
+
+.grid__item_4 {
+  width: 250px;
+  height: 250px;
+  margin: auto;
+  border: 1px solid pink;
+  border-radius: 25px;
+  background: url(https://pbs.twimg.com/profile_images/1080545769034108928/CEzHCTpI_400x400.jpg);
+  background-position: center;
 }
 
 #paragraph-1 {
