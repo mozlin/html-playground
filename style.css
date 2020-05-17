@@ -68,6 +68,42 @@ body {
   background-position: center;
 }
 
+.container {
+  margin-top: 25%;
+}
+
+.circle:nth-child(1),
+.circle:nth-child(2),
+.circle:nth-child(3),
+.circle:nth-child(4),
+.circle:nth-child(5){
+  width: 230px;
+  height: 230px;
+  margin: auto;
+  border: 1px solid yellow;
+  background-color: yellow;
+  border-radius: 10em;
+  display: inline-flex;
+  animation: PopUp .9s ease-in infinite;
+
+}
+
+.circle:nth-child(1){
+  animation-delay: 50ms;
+}
+
+.circle:nth-child(2){
+  animation-delay: 100ms;
+}
+
+.circle:nth-child(3){
+  animation-delay: 500ms;
+}
+
+.circle:nth-child(4){
+  animation-delay: 300ms;
+}
+
 #paragraph-1 {
   color: rgb(219, 123, 78);
 }
@@ -79,7 +115,20 @@ body {
 #balls-header {
     color: black;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 200px;
+    font-size: 90px;
+}
+
+@keyframes PopUp{
+  0%{
+    transform: translateY(0px);
+  }
+  50%{
+    transform: translateY(-350px);
+  }
+  100%{
+    transform: translateY(0);
+  }
+
 }
 
 /* We used 3 different ways to specify color:
