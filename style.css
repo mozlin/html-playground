@@ -16,10 +16,29 @@ body {
   color: black;
 }
 
+/* Blog */
 .blog-form {
   color: black;
   font-weight: bolder;
 }
+
+.square:nth-child(1),
+.square:nth-child(2){
+  width: 500px;
+  height: 500px;
+  margin: auto;
+  display: inline-block;
+
+}
+
+.square:nth-child(1){
+  background-color: #FFF1F2;
+}
+
+.square:nth-child(2) {
+  background-color: #C1E7e3;
+
+/* Shop */
 
 .grid {
   display: grid;
@@ -68,6 +87,7 @@ body {
   background-position: center;
 }
 
+/* balling */
 .container {
   margin-top: 25%;
 }
